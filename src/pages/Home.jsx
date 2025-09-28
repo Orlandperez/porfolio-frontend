@@ -1,6 +1,6 @@
 import React from 'react'
-import '../styles/home.css'
-import '../styles/estrellas.css'
+import '../styles/Home.css'
+import '../styles/Estrellas.css'
 import foto2 from '../assets/foto2.jpg'
 
 function Home() {

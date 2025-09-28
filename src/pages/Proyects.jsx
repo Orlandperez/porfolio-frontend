@@ -1,6 +1,6 @@
 import React from 'react'
 import ProyectsList from '../components/ProyectsList'
-import '../styles/proyects.css'
+import '../styles/Proyects.css'
 
 function Proyects() {
   return (
