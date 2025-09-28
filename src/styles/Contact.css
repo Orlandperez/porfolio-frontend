@@ -1,0 +1,120 @@
+.contact {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+.contact h2{
+    font-size: 40px;
+    width: 64%;
+    margin: 0 auto;
+}
+.contact .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact .contact-container .contact-info{
+    width: 600px;
+    margin-right: 150px;
+}
+.contact .contact-container .contact-info div{
+    text-align: center;
+    padding: 20px;
+}
+.contact .contact-container .contact-info div a i{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.contact .contact-container .contact-form{
+    background-color: rgba(0, 0, 0, 0.363);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    padding: 35px;
+    border-radius: 20px;
+}
+.contact .contact-container .contact-form input, textarea, button{
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: 2px 1px 4px rgba(226, 226, 226);
+    color: white;
+}
+
+.contact .contact-container .contact-form textarea{
+    height: 150px;
+}
+
+
+.contact .contact-container .contact-form input:hover{
+    border: 1px solid rgba(226, 226, 226, 0.2);
+    box-shadow: 2px 1px 4px rgb(22, 173, 173);
+    transition: .5s;
+}
+.contact .contact-container .contact-form textarea:hover{
+    border: 1px solid rgba(226, 226, 226, 0.2);
+    box-shadow: 2px 1px 4px rgb(22, 173, 173);
+    transition: .5s;
+}
+.contact .contact-container .contact-form button:hover{
+    box-shadow: 2px 1px 4px rgb(22, 173, 173);
+    color: white;
+    transition: .5s;
+    border: 1px solid rgba(226, 226, 226, 0.2);
+    cursor: pointer;
+}
+
+
+
+.icono-exito {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+/* Responsive */
+@media(max-width: 1490px){
+    .contact .contact-container .contact-info{
+    width: 400px;
+    margin-right: 50px;
+}
+}
+
+@media(max-width: 950px){
+    .contact h2{
+        text-align: center;
+        width: 100%;
+    }
+    .contact .contact-container {
+        flex-direction: column;
+    }
+    .contact .contact-container .contact-info{
+        margin: 0;
+    }
+    .contact .contact-container .contact-form{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 480px){
+    .contact .contact-container .contact-info{
+        margin: 0;
+        padding: 0 10px;
+    }
+    .contact .contact-container .contact-info p{
+    padding: 0 12px;
+    }
+    .contact .contact-container .contact-form input, textarea, button{
+        width: 250px;
+    }
+}

@@ -1,0 +1,89 @@
+.aboutMe{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+.aboutMe .about-container{
+    width: 65%;
+    margin: 0 auto;
+}
+.aboutMe .about-container h1{
+    font-size: 40px;
+}
+.aboutMe .about-container .linea1{
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: rgb(172, 172, 172);
+    margin: 10px 0 30px
+}
+.aboutMe .about-container .about-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    justify-content: space-between;
+}
+.aboutMe .about-container .about-info div{
+    border-top: 4px solid rgb(204, 204, 204);
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 4px 9px 9px 0px rgba(226, 226, 226, 0.2);
+    height: 200px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.288);
+}
+.aboutMe .about-container .about-info div:hover{
+    border-top: 4px solid rgb(22, 173, 173);
+    box-shadow: 2px 1px 4px rgb(22, 173, 173);
+    transition: .5s;
+}
+.aboutMe .about-container .about-info div h3{
+    padding: 10px 5px;
+}
+.aboutMe .about-container .skills{
+    background-color: rgba(0, 0, 0, 0.288);
+    text-align: center;
+    margin-top: 30px;
+    padding: 50px 0;
+    border-radius: 20px;
+}
+.aboutMe .about-container .skills h3{
+    font-size: 23px;
+}
+.aboutMe .about-container .skills .linea2{
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(209, 208, 208);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.aboutMe .about-container .skills .skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.aboutMe .about-container .skills .skills-list .skill-item{
+    margin-bottom: 20px;
+}
+.aboutMe .about-container .skills .skills-list .skill-item i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* Responsive */
+@media(max-width: 1200px){
+    .aboutMe .about-container .about-info{
+        justify-content: space-evenly;
+    }
+}
+@media(max-width: 565px){
+    .aboutMe .about-container{
+        width: 90%;
+    }
+    .aboutMe .about-container .about-info{
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, 330px);
+    }
+}

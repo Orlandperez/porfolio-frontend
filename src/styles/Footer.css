@@ -1,0 +1,41 @@
+footer{
+    background-color: rgb(19, 18, 18);
+    width: 100%;
+    height: 230px;
+}
+footer .footer-conteiner{
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 0;
+    line-height: 2.5rem;
+}
+
+footer .footer-conteiner .footer-nav a{
+    padding: 0 10px ;
+    text-decoration: none;
+    transition: .3s;
+}
+footer .footer-conteiner .footer-redes a{
+    padding: 0 15px ;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+}
+
+/* responsive */
+@media (max-width: 600px){
+    footer .footer-conteiner{
+        width: 100%;
+    }
+    footer .footer-conteiner .footer-nav a{
+        font-size: 14px;
+    }
+    footer .footer-conteiner .footer-redes a{
+        font-size: 16px;
+    }
+    footer .footer-conteiner p{
+        font-size: 14px;
+    }
+}
