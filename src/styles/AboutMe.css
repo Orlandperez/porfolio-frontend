@@ -30,6 +30,7 @@
     height: 200px;
     margin-bottom: 30px;
     background-color: rgba(0, 0, 0, 0.288);
+    height: auto;
 }
 .aboutMe .about-container .about-info div:hover{
     border-top: 4px solid rgb(22, 173, 173);
