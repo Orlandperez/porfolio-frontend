@@ -7,22 +7,22 @@ function Contact() {
   const [mensajeEnviado, setMensajeEnviado] = useState(false)
 
   const enviar = async (data) => {
-    try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      if (response.ok) {
-        setMensajeEnviado(true)
-        reset()
-      } else {
-        alert('Error al enviar el mensaje');
-      }
-    } catch (error) {
-      alert('Error al conectar con el servidor');
+  try {
+    const response = await fetch('https://formspree.io/f/xnnndroz', { // Reemplaza {tu_id}
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (response.ok) {
+      setMensajeEnviado(true)
+      reset()
+    } else {
+      alert('Error al enviar el mensaje');
     }
-  };
+  } catch (error) {
+    alert('Error al conectar con el servidor');
+  }
+};
 
   return (
     <section className='contact' id='contact'>
