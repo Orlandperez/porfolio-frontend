@@ -61,3 +61,11 @@
         font-size:34px;
     }
 }
+@media(max-width: 360px){
+    .hero .hero-text h1{
+        font-size:31px;
+    }
+    .hero .hero-text span, p{
+        font-size: 17px;
+    }
+}
