@@ -21,26 +21,26 @@ a:hover{
 
 /* Animación de gradiente suave */
 body {
-  background: linear-gradient(220deg,
-    rgba(68, 3, 3, 0.959), 
+  background: linear-gradient(270deg,
+    rgba(92, 5, 5, 0.959), 
     rgba(0, 0, 0, 0.911), 
-    rgba(59, 32, 7, 0.918),
+    rgba(66, 36, 8, 0.918),
     rgba(0, 0, 0, 0.911), 
-    rgba(6, 29, 59, 0.918),
+    rgba(5, 23, 46, 0.918),
     rgba(0, 0, 0, 0.911), 
-    rgba(5, 58, 46, 0.918),
+    rgba(4, 46, 36, 0.918),
     rgba(0, 0, 0, 0.911), 
     rgba(63, 5, 5, 0.918), 
     rgba(0, 0, 0, 0.911)
   );
   background-size: 1200% 1200%;
-  animation: rgbBackground 35s ease infinite;
+  animation: rgbBackground 70s ease infinite;
 }
 
 /* Nueva animación para el gradiente */
 @keyframes rgbBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% { background-position: 0% 50%;}
+  50% { background-position: 100% 50%;}
+  100% { background-position: 0% 50%;}
 }
 
