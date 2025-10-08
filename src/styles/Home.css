@@ -56,7 +56,7 @@
     }
 }
 
-@media(max-width: 395px){
+@media(max-width: 450px){
     .hero .hero-text h1{
         font-size:34px;
     }
