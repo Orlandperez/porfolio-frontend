@@ -22,15 +22,15 @@ a:hover{
 /* Animación de gradiente suave */
 body {
   background: linear-gradient(270deg,
-    rgba(92, 5, 5, 0.959), 
+    rgba(51, 3, 3, 0.959), 
     rgba(0, 0, 0, 0.911), 
-    rgba(66, 36, 8, 0.918),
+    rgba(36, 19, 4, 0.918),
     rgba(0, 0, 0, 0.911), 
-    rgba(5, 23, 46, 0.918),
+    rgba(3, 14, 29, 0.918),
     rgba(0, 0, 0, 0.911), 
     rgba(4, 46, 36, 0.918),
     rgba(0, 0, 0, 0.911), 
-    rgba(63, 5, 5, 0.918), 
+    rgba(37, 3, 3, 0.918), 
     rgba(0, 0, 0, 0.911)
   );
   background-size: 1200% 1200%;

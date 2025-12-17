@@ -1,8 +1,8 @@
 import React from 'react'
-import ProyectsList from '../components/ProyectsList'
-import '../styles/Proyects.css'
+import ProjectsList from '../components/ProjectsList'
+import '../styles/Projects.css'
 
-function Proyects() {
+function Projects() {
   return (
     <>
     <section className="projects" id="projects">
@@ -10,7 +10,7 @@ function Proyects() {
         <h2>Proyectos</h2>
         <span></span>
         <div className="projects-list">
-          <ProyectsList />
+          <ProjectsList />
         </div>
       </div>
     </section>
@@ -18,4 +18,4 @@ function Proyects() {
   )
 }
 
-export default Proyects
+export default Projects

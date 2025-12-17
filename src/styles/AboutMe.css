@@ -29,7 +29,7 @@
     box-shadow: 4px 9px 9px 0px rgba(226, 226, 226, 0.2);
     height: 200px;
     margin-bottom: 30px;
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0.445);
     height: auto;
 }
 .aboutMe .about-container .about-info div:hover{
@@ -41,7 +41,7 @@
     padding: 10px 5px;
 }
 .aboutMe .about-container .skills{
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0.521);
     text-align: center;
     margin-top: 30px;
     padding: 50px 0;

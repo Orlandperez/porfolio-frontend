@@ -1,0 +1,169 @@
+.projects .projects-conteiner{
+    width: 90%;
+    max-width: 1200px; 
+    padding: 100px 0;
+    margin: 0 auto;
+}
+.projects .projects-conteiner h2{
+    font-size: 37px;
+}
+.projects .projects-conteiner span{
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: rgb(172, 172, 172);
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.projects .projects-conteiner .projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+.projects-grid{
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  padding: 40px 20px;
+}
+
+/* Card */
+.projects-card{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.356));
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  transition: transform .28s ease, box-shadow .28s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Card destacada (opcional) */
+.featured-card{
+  grid-column: span 1;
+}
+
+/* Elevación al hover */
+.projects-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Media (imagen) */
+.card-media{
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(46,196,182,0.06), rgba(118,75,162,0.04));
+}
+
+/* Imagen: que rellene sin deformar */
+.card-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .45s ease;
+}
+
+/* Zoom sutil de la imagen al hover */
+.projects-card:hover .card-media img{
+  transform: scale(1.08);
+}
+
+/* Overlay con links aparece al hover */
+.card-overlay{
+  position: absolute;
+  inset: 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  transition: opacity .25s ease;
+  backdrop-filter: blur(3px);
+}
+
+.projects-card:hover .card-overlay{
+  opacity: 1;
+}
+
+/* Botones del overlay */
+.icon-btn{
+  padding: 8px 14px;
+  background: rgba(46,196,182,0.95);
+  color: #082427;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 6px 18px rgba(46,196,182,0.12);
+}
+
+/* Cuerpo de la card */
+.card-body{
+  padding: 18px;
+  color: #e6e6e6;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  flex:1;
+}
+
+.card-body h3{
+  margin:0;
+  font-size:1.25rem;
+  color: #fff;
+}
+
+.card-body p{
+  margin:0;
+  color: rgba(230,230,230,0.8);
+  line-height:1.4;
+  font-size:0.95rem;
+}
+
+/* Tags de tecnologías */
+.card-tech{
+  margin-top:8px;
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.card-tech span{
+  background: rgba(255,255,255,0.04);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:0.8rem;
+  color: #cfd8dc;
+}
+
+.projects .projects-conteiner .card-tech span,
+.projects-grid .card-tech span{
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background: rgba(46,196,182,0.12);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin: 6px 8px 0 0;
+  box-shadow: 0 6px 18px rgba(46,196,182,0.06);
+  text-decoration: none;
+}
+
+/* Responsive ajustes */
+@media(max-width:600px){
+  .card-media{ height: 150px; }
+  .projects-grid{ gap: 18px; padding: 28px 12px; }
+  .featured-card{ grid-column: span 1;}
+}
+
